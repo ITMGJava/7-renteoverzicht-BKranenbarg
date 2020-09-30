@@ -18,23 +18,19 @@ public class Renteoverzicht {
         float rente;
         if (bedrag > 1000) {
             rente = (float) 0.002;
-        }
-        else if (bedrag >= 600 & bedrag <= 1000) {
+        } else if (bedrag >= 600 & bedrag <= 1000) {
             rente = (float) 0.01;
-        }
-        else if (bedrag >=300 & bedrag < 600) {
+        } else if (bedrag >= 300 & bedrag < 600) {
             rente = (float) 0.02;
-        }
-        else if (bedrag >0 & bedrag < 300) {
+        } else if (bedrag > 0 & bedrag < 300) {
             rente = (float) 0.03;
-        }
-        else {
-            rente = 0;
+        } else {
+            rente = (float) 0.1;
         }
 
 
         //string voor weergeven ingevoerde gegevens en bijbehorende rente
-        String zin = "Beste " + naam + ", dit is je spaaroverzicht met een beginbedrag van " + bedrag + " met een jaarlijkse rente van " + rente*100 + "%";
+        String zin = "Beste " + naam + ", dit is je spaaroverzicht met een beginbedrag van " + bedrag + " met een jaarlijkse rente van " + rente * 100 + "%";
         //zin weergeven
         System.out.println(zin);
 
@@ -48,9 +44,6 @@ public class Renteoverzicht {
             //string weergeven voor rentes afgerond op 2 decimalen
             System.out.printf("%n Jaar " + x + ": %.2f", bedrag);
         }
-
-
-
 
 
     }
