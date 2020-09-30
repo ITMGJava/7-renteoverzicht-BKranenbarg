@@ -22,8 +22,11 @@ public class Renteoverzicht {
             rente = (float) 0.01;
         } else if (bedrag >= 300 & bedrag < 600) {
             rente = (float) 0.02;
-        } else if (bedrag > 0 & bedrag < 300) {
+        } else if (bedrag >= 100 & bedrag < 300) {
             rente = (float) 0.03;
+        }
+        else if (bedrag >= 0 & bedrag < 100) {
+            rente = 0;
         } else {
             rente = (float) 0.1;
         }
