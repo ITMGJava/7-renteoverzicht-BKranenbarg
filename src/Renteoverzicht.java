@@ -31,11 +31,21 @@ public class Renteoverzicht {
             rente = (float) 0.1;
         }
 
-
+        if (bedrag >= 0) {
         //string voor weergeven ingevoerde gegevens en bijbehorende rente
         String zin = "Beste " + naam + ", dit is je spaaroverzicht met een beginbedrag van " + bedrag + " met een jaarlijkse rente van " + rente * 100 + "%";
         //zin weergeven
         System.out.println(zin);
+        }
+
+        else {
+            //string voor weergeven ingevoerde gegevens en bijbehorende rente
+            String zin = "Beste " + naam + ", dit is je overzicht met een schuld van " + bedrag + " met een jaarlijkse debetrente van " + rente * 100 + "%";
+            //zin weergeven
+            System.out.println(zin);
+        }
+
+
 
         //variabele aanmaken voor output tafel
         String output;
